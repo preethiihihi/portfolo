@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<head>
+ <title>Your Portfolio</title>
+ <style>
+     body {
+ font-family: Georgia, serif;
+ font-size: 18px;
+ line-height: 1.5;
+ color: #333;
+ background-color: #f4f4f4;
+}
+
+a {
+ color: #563d7c;
+ text-decoration: none;
+}
+
+a:hover {
+ text-decoration: underline;
+}
+
+header {
+ background-color: #563d7c;
+ color: white;
+ padding: 20px;
+ text-align: center;
+}
+
+header h1 {
+ margin: 0;
+ font-size: 3rem;
+}
+
+header p {
+ margin: 0;
+ font-size: 1.5rem;
+}
+
+#about {
+ background-color: #fff;
+ padding: 20px;
+ text-align: center;
+ box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+ margin: 20px;
+}
+
+#about img {
+ width: 200px;
+ height: 200px;
+ border-radius: 50%;
+ object-fit: cover;
+ margin-bottom: 20px;
+}
+
+#about p {
+ max-width: 500px;
+ margin: 0 auto;
+}
+
+#skills {
+     text-align: center;
+ background-color: #f4f4f4;
+ padding: 20px;
+}
+
+#skills h2 {
+ margin: 0;
+ font-size: 2.5rem;
+}
+
+#skills ul {
+ list-style: none;
+ padding: 0;
+}
+
+#skills li {
+ margin-bottom: 10px;
+}
+
+#projects {
+ background-color: #fff;
+ padding: 20px;
+ text-align: center;
+ box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+ margin: 20px;
+}
+
+#projects h2 {
+ margin: 0;
+ font-size: 2.5rem;
+}
+
+#projects ul {
+ list-style: none;
+ padding: 0;
+}
+
+#projects li {
+ margin-bottom: 20px;
+}
+
+#projects h3 {
+ margin: 0;
+ font-size: 2rem;
+}
+
+#projects p {
+ max-width: 500px;
+ margin: 10px auto;
+}
+
+#projects img {
+ width: 100%;
+ height: auto;
+ border-radius: 10px;
+}
+
+#resume {
+ background-color: #f4f4f4;
+ padding: 20px;
+ text-align: center;
+}
+
+#resume h2 {
+ margin: 0;
+ font-size: 2.5rem;
+}
+
+
+
+#contact {
+ background-color: #fff;
+ padding: 20px;
+ text-align: center;
+ box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+ margin: 20px;
+}
+
+#contact h2 {
+ margin: 0;
+ font-size: 2.5rem;
+}
+
+
+
+footer {
+ background-color: #563d7c;
+ color: white;
+ padding: 20px;
+ text-align: center;
+}
+
+footer p {
+ margin: 0;
+ font-size: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+   font-size: 2rem;
+  }
+
+  #skills h2 {
+   font-size: 2rem;
+  }
+
+  #projects h2 {
+   font-size: 2rem;
+  }
+
+  #contact h2 {
+   font-size: 2rem;
+  }
+
+  #about img {
+   width: 150px;
+   height: 150px;
+  }
+
+  #skills {
+ background-color: #f8f9fa;
+ padding: 20px;
+}
+
+#skills h2 {
+ margin: 0;
+ font-size: 1.8rem;
+}
+
+.grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+ grid-gap: 10px;
+}
+
+#skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+#skills h2 {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.grid-item {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+ .grid {
+  grid-template-columns: 1fr;
+ }
+
+ .skill {
+  margin-bottom: 10px;
+ }
+}
+
+.project img {
+  width: 50%;
+  height: auto;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.project p {
+  width: 50%;
+  margin: 0;
+}
+
+.project {
+  display: flex;
+}
+}
+ </style>
+</head>
+<body>
+ <header>
+  <h1>Preethi Chitte</h1>
+  <p>student at NIT Warangal</p>
+ </header>
+
+ <section id="about">
+  
+  <p>My keen interest in software engineering fuels my commitment to solving complex problems and creating innovative
+     solutions My skills and enthusiasm are geared toward contributing to the dynamic world of software development.</p>
+ </section>
+
+ <section id="skills">
+     <h2>Skills</h2>
+     <div class="grid">
+      <div class="skill">Javascript</div>
+      <div class="skill">Python</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">React.js</div>
+      <div class="skill">Django</div>
+     </div>
+ </section>
+
+ <section id="projects">
+  <h2>Projects</h2>
+  <ul>
+   <li>
+    <h3>Job-Portal</h3>
+    <p>The backend was developed using Node.js and Express.js, providing a robust and scalable server-side architecture.
+     MongoDB was chosen as the database to efficiently manage and store job listings, and applicant information
+     incorporating features such as an About page, job listings, application submission, and an employee dashboard for
+     application management and job posting.
+     </p>
+    
+   </li>
+
+   <li>
+     <h3>maze game</h3>
+     <p>utilizing the depth-first search algorithm to generate unique mazes for each game session.
+          Overcame challenges implemented maze creation algorithm, collision detection, Providing users with an interactive
+          environment to navigate through mazes,
+          </p>
+     <img src="project-2-image.jpg" alt="Project 2 Image">
+    </li>
+
+   <li>
+    <h3>e-commerce website</h3>
+    <p>Developed a user-friendly e-commerce app using Django, featuring user registration, login, and product browsing.
+     Implemented admin functionality for product updates and customer cart management
+      Overcame challenges in properly capturing and storing customer details, ensuring accurate data organization for
+     each individual.Successfully tackled URL routing complexities</p>
+    <img src="project-2-image.jpg" alt="Project 2 Image">
+   </li>
+
+   
+   <!-- Add more projects as needed -->
+  </ul>
+ </section>
+
+ <section id="resume">
+  <h2>Resume</h2>
+  <p>
+   <a href="file:///C:/Users/PREETHI/Desktop/resume/Preethi_208115_sde_updated_mar.pdf" download>Download Resume</a>
+  </p>
+ </section>
+
+ <section id="contact">
+  <h2>Contact</h2>
+  <p>Email: cp932004@student.nitw.ac.in</p>
+  <p>Phone: 7093610597</p>
+  <!-- Add more contact info as needed -->
+ </section>
+
+ <footer>
+  <p>Copyright © Your Name 2024</p>
+  <!-- Add any additional links or information as needed -->
+ </footer>
+</body>
+</html>
